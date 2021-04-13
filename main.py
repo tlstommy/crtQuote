@@ -40,7 +40,7 @@ def displayQuote():
         quoteBody, quoteAuthor = getJsonQuote() 
     text = Text('"'+quoteBody +'"\n\n\n- '+ quoteAuthor)
     text.stylize("bold")
-    console.print(Panel.fit(Padding(text,(1,1,1,1),style="o")))
+    console.print(Panel(Padding(text,(1,1,1,1),style="o")))
 
 def addQuote():
     quoteBody = input("Quote: ")
